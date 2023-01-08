@@ -11,6 +11,8 @@ for file in operator/*.conf; do
 	get_asn $file
 	get_asn $file | xargs bgptools -b rib.txt  | cidr-merger -s | grep -Fv : | cat > result/${operator}.txt  &
 	get_asn $file | xargs bgptools -b rib6.txt | grep -v '^::/0$' | cidr-merger -s | grep -F  : | cat > result/${operator}6.txt &
+	echo -e "payload:" >result/${operator}_clash  &
+	cat result/${operator}.txt | sort -V | uniq | sed '/./{s/^/  - IP-CIDR,&/}' >>result/${operator}_clash  &
 done
 
 wait_exit
