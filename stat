@@ -4,11 +4,17 @@ cernet
 cernet6
 672792581
 
+cernet_clash
+0
+
 china
-55935232
+55984640
 
 china6
-1125796902
+1125796736
+
+china_clash
+0
 
 chinanet
 129265664
@@ -16,11 +22,17 @@ chinanet
 chinanet6
 268773857
 
+chinanet_clash
+0
+
 cmcc
 56949760
 
 cmcc6
 276700178
+
+cmcc_clash
+0
 
 cstnet
 744960
@@ -28,11 +40,17 @@ cstnet
 cstnet6
 1179648
 
+cstnet_clash
+0
+
 drpeng
 337920
 
 drpeng6
 131072
+
+drpeng_clash
+0
 
 googlecn
 8704
@@ -40,15 +58,24 @@ googlecn
 googlecn6
 65568
 
+googlecn_clash
+0
+
 tietong
 56949760
 
 tietong6
 276700178
 
+tietong_clash
+0
+
 unicom
 76416256
 
 unicom6
 33476901
+
+unicom_clash
+0
 
