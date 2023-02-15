@@ -8,16 +8,16 @@ cernet_clash
 0
 
 china
-56226304
+56403200
 
 china6
-1092346160
+1092346672
 
 china_clash
 0
 
 chinanet
-129193728
+129208832
 
 chinanet6
 268773857
@@ -26,7 +26,7 @@ chinanet_clash
 0
 
 cmcc
-56108800
+56916224
 
 cmcc6
 276696082
@@ -44,7 +44,7 @@ cstnet_clash
 0
 
 drpeng
-329472
+337920
 
 drpeng6
 131072
@@ -62,7 +62,7 @@ googlecn_clash
 0
 
 tietong
-56108800
+56916224
 
 tietong6
 276696082
@@ -71,7 +71,7 @@ tietong_clash
 0
 
 unicom
-76327680
+76337920
 
 unicom6
 33476917
