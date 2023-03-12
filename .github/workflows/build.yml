@@ -18,6 +18,8 @@ jobs:
       GO111MODULE: on
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 10
       - uses: dtolnay/rust-toolchain@stable
       - uses: actions/setup-go@v2
         with:
