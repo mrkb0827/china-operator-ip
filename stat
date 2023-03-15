@@ -1,20 +1,23 @@
-cernet
-17180672
+china-noisp
+56449280
 
-cernet6
-672792581
+china-noisp6
+1092411915
 
-cernet_clash
-0
+china-noisp_clash
+56449280
 
 china
-56453376
+302124800
 
 china6
-1092410797
+1663017465
+
+china6_clash
+25359
 
 china_clash
-0
+302124800
 
 chinanet
 129173760
@@ -23,7 +26,7 @@ chinanet6
 268773857
 
 chinanet_clash
-0
+129173760
 
 cmcc
 56990208
@@ -32,43 +35,7 @@ cmcc6
 276696082
 
 cmcc_clash
-0
-
-cstnet
-744960
-
-cstnet6
-1179648
-
-cstnet_clash
-0
-
-drpeng
-337920
-
-drpeng6
-131072
-
-drpeng_clash
-0
-
-googlecn
-8704
-
-googlecn6
-65568
-
-googlecn_clash
-0
-
-tietong
 56990208
-
-tietong6
-276696082
-
-tietong_clash
-0
 
 unicom
 76232960
@@ -77,5 +44,5 @@ unicom6
 33476917
 
 unicom_clash
-0
+76232960
 
