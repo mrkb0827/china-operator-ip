@@ -21,4 +21,4 @@ for file in operator/*.conf; do
 	cat result/${operator}.txt | perl -ne '/(.+\/\d+)/ && print "  - |$1|\n"' | sed "s/|//g" >> result/${operator}_clash.txt
 done
 	echo -e "payload:" > result/china6_clash.txt
-	cat result/china6.txt | perl -ne '/(.+\/\d+)/ && print "  - |$1|\n"' | sed "s/|//g" >> result/china6_clash.txt
+	cat result/lz_all_cn_cidr6.txt | perl -ne '/(.+\/\d+)/ && print "  - |$1|\n"' | sed "s/|//g" >> result/china6_clash.txt
