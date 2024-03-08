@@ -1,48 +1,48 @@
-china-noisp
-58901504
-
-china-noisp6
-1096917530
-
-china-noisp_clash
-58901504
-
-china
-301140736
-
-china6
-1667715270
-
 china6_clash
 25430
 
-china_clash
-301140736
+lz_all_cn_cidr
+301139456
 
-chinanet
+lz_all_cn_cidr6
+1667715263
+
+lz_all_cn_cidr_clash
+301139456
+
+lz_chinatelecom_cidr
 128986880
 
-chinanet6
+lz_chinatelecom_cidr6
 268970459
 
-chinanet_clash
+lz_chinatelecom_cidr_clash
 128986880
 
-cmcc
+lz_cmcc_cidr
 53764864
 
-cmcc6
+lz_cmcc_cidr6
 276761622
 
-cmcc_clash
+lz_cmcc_cidr_clash
 53764864
 
-unicom
+lz_othernet_cidr
+58900224
+
+lz_othernet_cidr6
+1096917523
+
+lz_othernet_cidr_clash
+58900224
+
+lz_unicom_cnc_cidr
 74509056
 
-unicom6
+lz_unicom_cnc_cidr6
 33744736
 
-unicom_clash
+lz_unicom_cnc_cidr_clash
 74509056
 
