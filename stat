@@ -2,40 +2,40 @@ china6_clash
 25434
 
 lz_all_cn_cidr
-287059712
+287065856
 
 lz_all_cn_cidr6
-1667977171
+1667977215
 
 lz_all_cn_cidr_clash
-287059712
+287065856
 
 lz_chinatelecom_cidr
-128984064
+128983552
 
 lz_chinatelecom_cidr6
 268970459
 
 lz_chinatelecom_cidr_clash
-128984064
+128983552
 
 lz_cmcc_cidr
-39794176
+39796224
 
 lz_cmcc_cidr6
 276761622
 
 lz_cmcc_cidr_clash
-39794176
+39796224
 
 lz_othernet_cidr
-58200320
+58226432
 
 lz_othernet_cidr6
-1097049025
+1097049069
 
 lz_othernet_cidr_clash
-58200320
+58226432
 
 lz_unicom_cnc_cidr
 74383104
