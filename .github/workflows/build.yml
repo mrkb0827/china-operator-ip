@@ -21,10 +21,11 @@ jobs:
         with:
           fetch-depth: 10
       - uses: dtolnay/rust-toolchain@stable
+      - uses: cargo-bins/cargo-binstall@main
       - uses: actions/setup-go@v2
         with:
           go-version: 1.16
-      - run: sudo apt-get install -y lftp bgpdump tree
+      - run: sudo apt-get install -y lftp bgpdump tree jq
       - uses: actions/cache@v3
         with:
           key: ${{ runner.os }}-build-dependencies
@@ -32,7 +33,11 @@ jobs:
             ~/go/bin
             ~/.cargo/bin
       - run: ./dependency.sh
-      - run: ./generate.sh
+      - uses: nick-fields/retry@v3
+        with:
+          timeout_minutes: 30
+          max_attempts: 3
+          command: ./generate.sh
       - run: ./stat.sh
       - run: ./guard.sh
       - name: Checkout ip-lists branch

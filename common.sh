@@ -20,18 +20,15 @@ get_asn(){
 }
 
 prepare_data_v4(){
-	curl -sSLo rib.bz2 http://archive.routeviews.org/dnszones/rib.bz2
-	stat rib.bz2
+	bgpkit-broker latest -c rrc00 --json | jq -c '.[] | select( .data_type | contains("rib")) | .url' | head -n 1 | xargs curl -sSL -o rib.gz
+	stat rib.gz
 	log_info "runing bgpdump v4 ..."
-	bgpdump -m -O rib.txt rib.bz2
+	bgpdump -m -O rib.txt rib.gz
 	stat rib.txt
 	log_info "finish bgpdump v4"
 }
 prepare_data_v6(){
-	IP6UPSTREAM="http://archive.routeviews.org/route-views6/bgpdata"
-	MONTH6=$(date -u +%Y.%m)
-	LATEST6=$(lftp -e 'cls -1;exit' $IP6UPSTREAM/$MONTH6/RIBS/  2>/dev/null | sort | tail -n 1)
-	curl -sSLo rib6.bz2 "$IP6UPSTREAM/$MONTH6/RIBS/$LATEST6"
+	bgpkit-broker latest -c route-views6 --json | jq -c '.[] | select( .data_type | contains("rib")) | .url' | head -n 1 | xargs curl -sSL -o rib6.bz2
 	stat rib6.bz2
 	log_info "runing bgpdump v6 ..."
 	bgpdump -m -O rib6.txt rib6.bz2
