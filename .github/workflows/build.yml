@@ -25,7 +25,7 @@ jobs:
       - uses: actions/setup-go@v2
         with:
           go-version: 1.16
-      - run: sudo apt-get install -y lftp bgpdump tree jq
+      - run: sudo apt-get install -y lftp bgpdump tree jq axel
       - uses: actions/cache@v3
         with:
           key: ${{ runner.os }}-build-dependencies
@@ -35,7 +35,7 @@ jobs:
       - run: ./dependency.sh
       - uses: nick-fields/retry@v3
         with:
-          timeout_minutes: 30
+          timeout_minutes: 60
           max_attempts: 3
           command: ./generate.sh
       - run: ./stat.sh
