@@ -1,57 +1,57 @@
 cdn
-11357184
+512
 
 cdn6
-134932485
+2
 
 cdn_clash
-11357184
+512
 
 china6_clash
 25360
 
 lz_all_cn_cidr
-286957952
+286958976
 
 lz_all_cn_cidr6
-1662971991
+1662972744
 
 lz_all_cn_cidr_clash
-286957952
+286958976
 
 lz_chinatelecom_cidr
-128811520
+128812288
 
 lz_chinatelecom_cidr6
 268970567
 
 lz_chinatelecom_cidr_clash
-128811520
+128812288
 
 lz_cmcc_cidr
-41812480
+38523136
 
 lz_cmcc_cidr6
 276762577
 
 lz_cmcc_cidr_clash
-41812480
+38523136
 
 lz_othernet_cidr
-18188032
+18187520
 
 lz_othernet_cidr6
-675348539
+675479611
 
 lz_othernet_cidr_clash
-18188032
+18187520
 
 lz_unicom_cnc_cidr
-73443840
+73377792
 
 lz_unicom_cnc_cidr6
 33703421
 
 lz_unicom_cnc_cidr_clash
-73443840
+73377792
 
